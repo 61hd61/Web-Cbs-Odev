@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Web CBS Haritası</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+    <div class="sidebar">
+       <img src="resimler/profil_resmi.jpg" alt="Profil Resmi" class="profile-img">
+        <h2>Hakan Durmuş</h2>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-user"></i> Hakkımda</a></li>
+            <li><a href="calismalar.html"><i class="fas fa-briefcase"></i> Çalışmalarım</a></li>
+            <li><a href="harita.html" class="active"><i class="fas fa-map-marked-alt"></i> Web CBS Haritası</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="card" style="margin-bottom: 20px; padding: 20px;">
+            <h1 style="margin-top: 0;">Trabzon Turizm Destinasyonları Haritası</h1>
+            <p style="margin-bottom: 0;">Aşağıdaki harita üzerinden Trabzon'daki tarihi ve turistik noktaları inceleyebilir, sağ üst köşedeki katman menüsünden yapı türlerini açıp kapatabilirsiniz.</p>
+        </div>
+        
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
